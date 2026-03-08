@@ -13,14 +13,26 @@ Whether you need a sleek SVG or a pixel-perfect PNG logo for React, Docker, Node
 
 ## ⚡ Get Started in Seconds
 
-Simply pass the technology name in the URL, and instantly receive the logo file!
+Simply pass the technology name in the URL, and instantly receive the logo file! The API is **fully case-insensitive**, meaning `Docker`, `docker`, and `DOCKER` will all work perfectly.
 
 ```html
 <!-- Example: Fetching the React SVG logo -->
 <img src="https://tech-stack-icon-api.solvcraft.workers.dev/icon/react" alt="React Logo" />
 
 <!-- Example: Fetching the Docker PNG logo -->
-<img src="https://tech-stack-icon-api.solvcraft.workers.dev/icon/docker?format=png" alt="Docker Logo" />
+<img src="https://tech-stack-icon-api.solvcraft.workers.dev/icon/Docker?format=png" alt="Docker Logo" />
+```
+
+## 🔍 Search Available Icons
+
+Not sure if we have an icon? Use our blazing fast Search Endpoint to query our database!
+
+```bash
+# Example: Searching for all icons containing "doc"
+curl https://tech-stack-icon-api.solvcraft.workers.dev/search?q=doc
+
+# Returns:
+# ["Docker", "Doctrine"]
 ```
 
 ## 📖 Interactive Documentation
